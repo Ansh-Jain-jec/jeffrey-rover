@@ -62,6 +62,11 @@ Tested on paved concrete, tiled surfaces, and platform steps:
 4. Open the board's IP address (printed to Serial on boot) in a browser
 5. Use Forward / Backward / Left / Right / STOP buttons to drive
 
+## Known Limitations
+
+- Current `left()`/`right()` functions share motor patterns with `backward()`/`forward()` respectively — effective turning behavior is limited to forward/backward bias rather than true differential skid-steer. Flagged for fix in Phase 2.
+- Default WiFi credentials (`RobotCar` / `12345678`) are placeholder — change before any real deployment.
+
 ## Roadmap (Phase 2)
 
 - Autonomous obstacle avoidance
